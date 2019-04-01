@@ -2,7 +2,8 @@
 # 比较多个数据库中同结构表数据差异
 
 ## 功能说明
-同时对比多个数据库中同结构表数据差异，对比各表数据中id相同的行数据和相对缺失某id的行，生成较为直观差异展示excel文件。
+同时对比多个数据库中同结构表数据差异，对比各表数据中id相同的行数据和相对缺失某id的行，生成较为直观差异展示excel文件:<br>
+![image](https://github.com/theTrouble/db_data_comparor/blob/master/result_excel.png)
 
 ## 注意
 小工具使用python3编写<br>
