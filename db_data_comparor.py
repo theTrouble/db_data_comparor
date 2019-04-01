@@ -162,7 +162,7 @@ while not is_all_arrays_ended(table_data_arr, row_indexe_arr):
 						sheet.write(current_excel_row_num, j + 1, table_data_arr[i][row_indexe_arr[i]][j])
 				current_excel_row_num = current_excel_row_num + 1
 			#写一个空行
-			sheet.write_merge(current_excel_row_num, current_excel_row_num, 0, column_count - 1, '')
+			sheet.write_merge(current_excel_row_num, current_excel_row_num, 0, column_count, '')
 			current_excel_row_num = current_excel_row_num + 1
 
 		#所有表行指针加一
@@ -187,7 +187,7 @@ while not is_all_arrays_ended(table_data_arr, row_indexe_arr):
 				row_indexe_arr[i] = row_indexe_arr[i] + 1
 			current_excel_row_num = current_excel_row_num + 1
 		#写一个空行
-		sheet.write_merge(current_excel_row_num, current_excel_row_num, 0, column_count - 1, '')
+		sheet.write_merge(current_excel_row_num, current_excel_row_num, 0, column_count, '')
 		current_excel_row_num = current_excel_row_num + 1
 
 #保存excel，文件已存在时给文件名后加数字
